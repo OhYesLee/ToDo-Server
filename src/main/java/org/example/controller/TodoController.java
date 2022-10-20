@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.example.model.TodoEntity;
 import org.example.model.TodoRequest;
 import org.example.model.TodoResponse;
-import org.example.service.TodoService;
+import org.example.services.TodoService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.*;
@@ -74,5 +74,4 @@ public class TodoController {
         this.todoService.deleteById(id);
         return ResponseEntity.ok().build();
     }
-
 }

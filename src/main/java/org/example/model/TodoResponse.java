@@ -19,9 +19,6 @@ public class TodoResponse {
         this.title = todoEntity.getTitle();
         this.order = todoEntity.getOrder();
         this.completed = todoEntity.getCompleted();
-
         this.url = "http://localhost:8080/" + this.id;
-
-
     }
 }
